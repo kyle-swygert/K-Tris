@@ -1,0 +1,4 @@
+package tetromino
+
+class SPiece {
+}
