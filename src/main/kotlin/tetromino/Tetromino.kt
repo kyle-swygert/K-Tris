@@ -9,12 +9,32 @@ abstract class Tetromino {
     // 2D array to represent shape of piece
     var cells: Array<IntArray> = Array(4) { IntArray(4) }
 
-    protected abstract fun setShellShapes()
+    init {
+        setShapeCells()
+    }
+
+    protected abstract fun setShapeCells()
 
     public abstract fun getColor(): Color
 
     public fun getLayoutArray(): Array<IntArray> {
         return cells
+    }
+
+    public fun printShapeCells() {
+
+        for (y in 3 downTo 0) {
+            for (x in 0..3) {
+                if (cells[x][y] == 1){
+                    print(" X")
+                }
+                else {
+                    print(" O")
+                }
+            }
+            println()
+        }
+
     }
 
 }

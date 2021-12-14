@@ -1,3 +1,8 @@
+import tetromino.JPiece
+import tetromino.LPiece
+import tetromino.SPiece
+import tetromino.ZPiece
+
 /**/
 
 // Import statements for classes to be used.
@@ -10,5 +15,19 @@ fun main() {
     for (i in 0..42 step 2) {
         println(i)
     }
+
+
+    val testJPiece = JPiece()
+    val testLPiece = LPiece()
+    val testSPiece = SPiece()
+    val testZPiece = ZPiece()
+
+    testJPiece.printShapeCells()
+    println()
+    testLPiece.printShapeCells()
+    println()
+    testSPiece.printShapeCells()
+    println()
+    testZPiece.printShapeCells()
 
 }
