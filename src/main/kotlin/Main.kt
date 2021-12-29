@@ -1,3 +1,4 @@
+import board.Board
 import tetromino.JPiece
 import tetromino.LPiece
 import tetromino.SPiece
@@ -29,5 +30,10 @@ fun main() {
     testSPiece.printShapeCells()
     println()
     testZPiece.printShapeCells()
+
+
+    val board = Board()
+
+    board.printBoard()
 
 }
