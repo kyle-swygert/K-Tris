@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetromino.IPieceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-01-04T21:44:55" hostname="KYLE-BIGBOI" time="0.042">
-  <properties/>
-  <testcase name="getCells()" classname="tetromino.IPieceTest" time="0.021"/>
-  <testcase name="getColor()" classname="tetromino.IPieceTest" time="0.02"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

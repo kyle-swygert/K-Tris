@@ -6,24 +6,16 @@ class Board {
     //var cells: Array<Cell> = Array(10) { IntArray(40) }
     val cells: ArrayList<ArrayList<Cell>> = ArrayList<ArrayList<Cell>>(10)
 
-    var goblin: List<List<Cell>> = ArrayList<List<Cell>>()
+    //var goblin: List<List<Cell>> = ArrayList<List<Cell>>()
 
-    val numRows = 40
-    val numColumns = 10
+    //val numRows = 40
+    //val numColumns = 10
 
     init {
 
         // initialize the size of the matrix right here. It might be best to change the way that the cells are stored in the class for simpler initialization of the matrix size and access.
         // Remember that we want 10 lists in the x direction (first index), then we want those lists to have 40 items in them in the y direction (second index)
         // I believe this should be adding 10 lists to the outer index, then for each of those lists, add 40 items to each list.
-
-        var tempList = ArrayList<Cell>(40)
-        // include a copy of the tempRow to the cells 40 different times
-
-
-        var help = ArrayList<Cell>()
-        help.add(Cell())
-
 
 
 

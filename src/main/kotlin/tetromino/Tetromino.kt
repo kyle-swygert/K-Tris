@@ -9,17 +9,8 @@ abstract class Tetromino {
     // 2D array to represent shape of piece
     var cells: Array<IntArray> = Array(4) { IntArray(4) }
 
-//    init {
-//        //setShapeCells()
-//    }
-
-    //protected abstract fun setShapeCells()
-
+    // Class Methods
     abstract fun getColor(): Color
-
-//    public fun getLayoutArray(): Array<IntArray> {
-//        return cells
-//    }
 
     fun printShapeCells() {
 

@@ -11,16 +11,6 @@ class LPiece() : Tetromino() {
         cells[2][2] = 1
     }
 
-
-//    override fun setShapeCells() {
-//
-//        cells[0][1] = 1
-//        cells[1][1] = 1
-//        cells[2][1] = 1
-//        cells[2][2] = 1
-//
-//    }
-
     override fun getColor(): Color {
         return Color.ORANGE
     }

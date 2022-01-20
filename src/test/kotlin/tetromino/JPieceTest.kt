@@ -1,22 +1,28 @@
 package tetromino
 
-import org.junit.jupiter.api.Assertions.*
-import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
-import java.awt.Color
 
+import org.junit.jupiter.api.Assertions.*
+import java.awt.Color
 
 internal class JPieceTest {
 
-    var testPiece = JPiece()
+    var testJ = JPiece()
 
     @Test
-    @DisplayName("Test J Piece Color")
-    fun testGetColor() {
-        // Correct Color
-        assertEquals(Color.BLUE, testPiece.getColor())
-        // Incorrect Color
-        assertNotEquals(Color.RED, testPiece.getColor())
+    fun getCells() {
+        // create matrix of expected cell positions
+        var testCells: Array<IntArray> = Array(4) { IntArray(4) }
+        testCells[0][1] = 1
+        testCells[0][2] = 1
+        testCells[1][1] = 1
+        testCells[2][1] = 1
+        // compare to actual cell positions
+        assertArrayEquals(testCells, testJ.cells)
     }
 
+    @Test
+    fun getColor() {
+        assertEquals(Color.BLUE, testJ.getColor())
+    }
 }
