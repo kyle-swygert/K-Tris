@@ -13,7 +13,7 @@ internal class BoardTest {
         // ensure that the board is 10 cells wide by 40 cells tall.
 
         assertEquals( 40,testBoard.cells[0].count()) // width / X value
-        assertEquals( 10,testBoard.cells[0][40]) // height / y value
+        assertEquals( 10,testBoard.cells[0][39]) // height / y value
 
         //assertThrows(IndexOutOfBoundsException, )
 
@@ -22,8 +22,6 @@ internal class BoardTest {
     @Test
     fun testProperCellInit() {
         // Test that all the cells on the 2D array have their coordinates set properly during the Board constructor
-
-
 
         for (cellCol in 0 until 10) {
 
@@ -42,15 +40,6 @@ internal class BoardTest {
                 assertEquals(Color.BLACK, curCell.cellColor)
 
             }
-
-
         }
-
-
-
-
     }
-
-
-
 }

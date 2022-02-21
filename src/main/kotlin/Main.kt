@@ -1,8 +1,5 @@
 import board.Board
-import tetromino.JPiece
-import tetromino.LPiece
-import tetromino.SPiece
-import tetromino.ZPiece
+import tetromino.*
 
 /**/
 
@@ -35,5 +32,16 @@ fun main() {
     val board = Board()
 
     board.printBoard()
+
+
+    println("Testing bag generation")
+    var factory = TetrominoFactory()
+
+    var bag = factory.generateBag()
+
+    for (item: Tetromino in bag) {
+        item.printShapeCells()
+        println()
+    }
 
 }
