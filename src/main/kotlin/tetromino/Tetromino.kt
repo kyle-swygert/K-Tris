@@ -1,5 +1,6 @@
 package tetromino
 
+import board.TermColor
 import java.awt.Color
 
 abstract class Tetromino {
@@ -11,6 +12,8 @@ abstract class Tetromino {
 
     // Class Methods
     abstract fun getColor(): Color
+
+    //abstract fun getTermColor(): TermColor
 
     fun printShapeCells() {
 

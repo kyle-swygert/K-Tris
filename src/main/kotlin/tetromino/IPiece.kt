@@ -1,5 +1,6 @@
 package tetromino
 
+import board.TermColor
 import java.awt.Color
 
 class IPiece(): Tetromino() {
@@ -14,4 +15,8 @@ class IPiece(): Tetromino() {
     override fun getColor(): Color {
         return Color.CYAN
     }
+
+//    override fun getTermColor(): TermColor {
+//        return TermColor.CYAN
+//    }
 }
